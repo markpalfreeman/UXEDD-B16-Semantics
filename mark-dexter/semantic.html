@@ -2,15 +2,14 @@
 <html lang="en-us">
 	<head>
 		<title>Mark &amp; Dexter's Semantic HTML</title>
-		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 		<meta charset="UTF-8">
 	</head>
 	<body>
 		<header>
 			<h1>A List Apart</h1>
-			<img src="#"></img>
+			<img src="#" alt="mainsplash">
 			<nav>
-				<img src="#"></img>
+				<img src="#" alt="logo">
 				<a href="#">Articles</a>
 				<a href="#">Columns</a>
 				<a href="#">Blog</a>
@@ -21,11 +20,11 @@
 		</header>
 
 		<article>
-				<time>DATE</time>
+				<time datetime="2014-05-12">May 12th</time>
 				<h2>Get ready to take your CSS and Sass skills to a whole new level.</h2>
-			<section>
+			<section itemscope itemtype="http://schema.org/Person">
 				<h1>Excerpt #1</h1>
-				<p>by <a href="#">Author</a> · <a href="#"># Comments</a></p>
+				<p>by <a href="#" itemprop="Name">Jane Doe</a> · <a href="#"># Comments</a></p>
 				<p>This is the article text. Isn't this a good article? Keep reading, it gets better.</p>
 			</section>
 			<section>
@@ -34,9 +33,7 @@
 				<p>This is the article text. Isn't this a good article? Keep reading, it gets better.</p>
 			</section>
 		</article>
-<!-- JUST KIDDING! HA.
-		<hr>
--->
+
 		<article>
 			<h2>More from A List Apart</h2>
 			<section>
