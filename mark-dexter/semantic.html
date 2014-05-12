@@ -22,18 +22,17 @@
 		<article>
 				<time datetime="2014-05-12">May 12th</time>
 				<h2>Get ready to take your CSS and Sass skills to a whole new level.</h2>
-			<section itemscope itemtype="http://schema.org/Person">
+			<section>
 				<h1>Excerpt #1</h1>
-				<p>by <a href="#" itemprop="Name">Jane Doe</a> · <a href="#"># Comments</a></p>
+				<p>by <a href="#">Jane Doe</a> · <a href="#"># Comments</a></p>
 				<p>This is the article text. Isn't this a good article? Keep reading, it gets better.</p>
 			</section>
 			<section>
 				<h1>Excerpt #2</h1>
-				<p>by <a href="#">Author</a> · <a href="#"># Comments</a></p>
+				<p>by <a href="#">John Doe</a> · <a href="#"># Comments</a></p>
 				<p>This is the article text. Isn't this a good article? Keep reading, it gets better.</p>
 			</section>
 		</article>
-
 		<article>
 			<h2>More from A List Apart</h2>
 			<section>
@@ -52,6 +51,26 @@
 
 		<footer>
 			<h1>*For people who make websites.</h1>
+			<section itemscope itemtype="http://schema.org/Organization">
+				<h1>We are <span itemprop="legalName">Mexter</span>.</h1>
+				<p>Our address is
+					<span itemscope itemprop="address" itemtype="http://schema.org/PostalAddress">
+						<span itemprop="streetAddress">555 Street Ave</span>,
+				    <span itemprop="addressLocality">Seattle</span>,
+				    <span itemprop="addressRegion">WA</span>
+				    <span itemprop="postalCode">98000</span>.
+					</span>
+				</p>
+				<p>Mexter was founded by
+					<span itemscope itemprop="founder" itemtype="http://schema.org/Person">
+						<span itemprop="Name">Mark</span> <span itemprop="familyName">Palfreeman</span>
+					</span>
+					and
+					<span itemscope itemprop="founder" itemtype="http://schema.org/Person">
+						<span itemprop="Name">Dexter</span>	<span itemprop="familyName">Lesaca</span>.
+					</span>
+				</p>
+			</section>
 			<nav>
 				<a href="#">About</a>
 				<a href="#">Authors</a>
@@ -61,12 +80,12 @@
 			<aside>
 				<ul>
 					<li>
-						<img src="#"></img>
+						<img src="#" alt="advertisement1">
 						<h2>Ad 1</h2>
 						<p>Subtext</p>
 					</li>
 					<li>
-						<img src="#"></img>
+						<img src="#" alt="advertisement2">
 						<h2>Ad 2</h2>
 						<p>Subtext</p>
 					</li>
